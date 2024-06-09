@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site responsivel alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header com o menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="img642dc2884e0ea2.31871377.jpg" alt=""></div>
+            <div class="hamburger" id="hamburger">
+                <!-- Ícone do menu hambúrguer -->
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">inicio</a></li>
+                <li><a href="#about">sobre</a></li>
+                <li><a href="#services">serviços</a></li>
+                <li><a href="#contact">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Seções principais do site -->
+    <section id="home">
+        <h1>esse cachorro vai ja mure viu, só comendo pão com banana</h1>
+        <img src="esse-cachorro-vai-já-morrer-viu-v0-aTFheTB1OXR2dmVjMTZoM0wD5JGbsroqby0JFavWQafe2TA9ZIw0YWBhnNBu.webp" alt="">
+    </section>
+    <script>
+        // Script para controlar o menu hambúrguer
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('show');
+    });
+});
+    </script>
+</body>
+</html>
